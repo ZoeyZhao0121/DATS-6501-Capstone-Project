@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <br>
+                    <br>
+                    <h1><a href="index.html">Airline Economic Analysis & Prediction</a></h1>
+                    <br>
+                    <h2>DATS 6501 | Capstone Project | Group 2</h2>
+                </div><!-- logo_text-->
+            </div><!-- logo-->
+
+            <div id="menubar">
+                <ul id="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="eda.html">EDA</a></li>
+                    <li class="selected"><a href="model.html">MODEL</a></li>
+                    <li><a href="summary.html">SUMMARY</a></li>
+                </ul> <!--menu -->
+            </div><!-- menubar -->
+        </div><!-- header -->
+
+        
+        <div id="site_content">
+            <div class="sidebar">
+
+            </div><!-- sidebar -->
+
+
+        <div id="content">
+            <div class="container">
+            <h2>1.Target Variable: Load Factor</h2>
+            <br>
+            <br>
+            <h2>2. Features of Dataset(X_test)</h2>
+            <img src="X_Test.jpg" id="mainImage" style="width: 800px; height: 500px; float: center;">  
+            <br>
+            <br> 
+            <br>
+            <br>
+            <h2>3. Models:</h2>
+            <h3> - Linear Regression</h3>
+            <h3> - Decision Tree</h3>
+            <br>
+            <br>
+            <br>
+               <!-- 1. Linear Regression Models -->
+               <div class="row">
+                  <div id="Linear Regression">
+                     <h2>Linear Regression Model</h2>
+                     <br>
+                    <br>
+                    <h3>Mean Square Error</h3>
+                    <img src="lr_MSE.jpg" id="mainImage" style="width: 468px; height: 120px; float: center;"> 
+                    <br>
+                    <h4>The value of MSE is very close to zero which indicates it is a good fit. </h4>
+                    <br>
+                    <br> 
+                    <h3>Graph of Feature Importance</h3>
+                     <img src="LinearFigure.jpg" id="mainImage" style="width: 800px; height: 500px; float: center;"> 
+                     <br>
+                     <h4>The graph above presnets the score of feature importance of Linear Regression model.</h4> 
+                     <br>
+                     <h3>Scores of Feature Importance</h3>
+                     <img src="LinearScore.jpg" id="mainImage" style="width: 680px; height: 560px; float: center;">
+                     <br>
+                     <h4>Feature: 4, has has the highest score - postive 7.93, among all the features</h4>  
+                     <h4>RASM - Pax Revenue / ASM (Feature 4) indicates it has a significantly postive impact of target varible. </h4>
+
+                  </div>        
+               </div>
+<br>
+<br>
+
+        <div id="content">
+                <div class="container">
+                   <!-- 2. Decision Tree Regression Models -->
+                   <div class="row">
+                      <div id="Decision Tree Regression">
+                        <h2>Decision Tree Model</h2>
+                        <br>
+                        <br>
+                        <h3>Mean Square Error</h3>
+                        <img src="dt_MSE.jpg" id="mainImage" style="width: 480px; height: 120px; float: center;"> 
+                        <br>
+                        <h4>The value of MSE is very close to zero which indicates it is a good fit. </h4>
+                        <br>
+                        <br> 
+                        <h3>Graph of Feature Importance</h3>
+                         <img src="DecisionFigure.jpg" id="mainImage" style="width: 800px; height: 500px; float: center;"> 
+                         <br>
+                         <h4>The graph above presnets the score of feature importance of Linear Regression model.</h4> 
+                         <br>
+                         <h3>Scores of Feature Importance</h3>
+                         <img src="Decision Score.jpg" id="mainImage" style="width: 680px; height: 560px; float: center;">
+                         <br>
+                         <h4>Feature: 4, has has the highest score - postive 0.27, among all the features. However, it still significantly lower than the result of linear regression.</h4>  
+                         <h4>RASM - Pax Revenue / ASM (Feature 4) indicates it has a postive impact on Load Factor. </h4>
+    
+                    </div>        
+                </div>
+
+
+
+        <div id="content_footer">
+            <div id="footer">
+                &copy; <script>var d = new Date(); document.write(d.getFullYear());</script>       
+                | JING LI & YUSHUANG PORTER
+            </div><!--footer-->
+
+        </div><!--content_footer -->
+
+    </div><!-- main --> 
+</body>
+
+</html>
